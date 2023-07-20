@@ -50,7 +50,7 @@ public class CloudVendorAPIService {
     }
 
     @DeleteMapping("{vendorId}")
-    public String deleteCloudVendorDetails(String vendorId){
+    public String deleteCloudVendorDetails(@PathVariable String vendorId){
         // this.cloudVendor = null;
         map.remove(vendorId);
         return "Cloud Vendor Details deleted Successfully";
