@@ -21,7 +21,6 @@ public class CloudVendorAPIService {
     HashMap<String,CloudVendor> map = new HashMap<String,CloudVendor>();
 
     // CloudVendor cloudVendor;
-    
     @GetMapping("/")
     public ArrayList<CloudVendor> getAllCloudVendors() {
         return new ArrayList<CloudVendor>(map.values());
